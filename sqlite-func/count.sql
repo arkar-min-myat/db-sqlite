@@ -1,0 +1,16 @@
+CREATE TABLE t1(c INTEGER);
+
+INSERT INTO t1 (c) VALUES
+(1),
+(2),
+(3),
+(NULL),
+(3);
+
+SELECT * FROM t1;
+
+SELECT count(*) FROM t1;
+
+SELECT count(c) FROM t1;
+
+SELECT count(DISTINCT c) FROM t1;
